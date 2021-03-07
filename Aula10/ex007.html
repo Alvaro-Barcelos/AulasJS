@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <style>
+        body {
+            font: normal 14pt arial;
+            
+        }
+        input {
+            font: normal 12pt arial;
+            width: 140px;
+        }
+        div#res{
+            margin-top: 20px;
+            width: 300px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="caixa1" id="caixa1"> +
+    <input type="number" name="caixa2" id="caixa2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+        var d = window.document.getElementById('res')
+        function somar() {
+            var tn1 = window.document.getElementById('caixa1')
+            var tn2 = window.document.getElementById('caixa2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            h1.style.background = 'green'
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <br/><strong>${s}</strong>`
+        }
+
+    </script>
+</body>
+</html>

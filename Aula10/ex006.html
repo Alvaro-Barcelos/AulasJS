@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font: normal 16pt italic;
+            width: 350px;
+        }
+        div#area{
+            font: normal 14pt arial;
+            background: rgb(240, 0, 0);
+            color: rgb(5, 5, 5);
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+        div#anime{
+            margin-top: 50px;
+            font: normal 16pt italic;
+            background: blue;
+            color:black;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>EVENTOS DOM</h1>
+    <p>Temos dois blocos e eles fazem algumas coisinhas diferentes quando são acionados.</p>
+    <div id="area">
+        Interaja...
+    </div>
+    <div id="anime">
+        NADA
+    </div>
+
+    <script>
+        var h1 = window.document.getElementsByTagName('h1')[0]
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+        h1.style.background = 'red'
+
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'ACERTOU!'
+            a.style.background = 'green'
+            a.style.color = 'white'
+        }
+        function entrar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Entrou!'
+            a.style.background = 'yellow'
+        }
+        function saiu() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Saiu!'
+            a.style.background = 'red'
+        }
+    </script>
+</body>
+</html>
