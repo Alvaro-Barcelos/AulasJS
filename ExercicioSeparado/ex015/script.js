@@ -16,13 +16,16 @@ function verificar() {
             if (idade >= 0 && idade < 10){
                 //criança
                 img.setAttribute('src', 'bebe-m.png')
+               
             }else if (idade < 21){
                 //jovem
                 img.setAttribute('src', 'jovem-m.png')
+                
             }else if (idade < 60){
                 //adulto
                 img.setAttribute('src','adulto-m.png')
-            }else {
+               
+            }else if (idade < 119){
                 //idoso
                 img.setAttribute('src','idoso-m.png')
             }
@@ -31,12 +34,16 @@ function verificar() {
             gênero = 'Mulher'
             if (idade >= 0 && idade < 10){
                 //criança
+                img.setAttribute('src','bebe-f.png')
             }else if (idade < 21){
                 //jovem
+                img.setAttribute('src','jovem-f.png')
             }else if (idade < 60){
                 //adulto
+                img.setAttribute('src','adulta-f.png')
             }else {
                 //idoso
+                img.setAttribute('src','idosa-f.png')
             }
         }
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.<br/>` 
