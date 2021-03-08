@@ -9,11 +9,11 @@ header{
 }
 section{
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
-    width: 1000px;
+    width: 500px;
     margin: auto;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.479);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
 
 }
 footer{
@@ -21,4 +21,7 @@ footer{
     font-style: italic;
     text-align: center;
 
+}
+div#res {
+    text-align: center;
 }
