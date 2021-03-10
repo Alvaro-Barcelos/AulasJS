@@ -25,7 +25,7 @@ function verificar() {
                 //adulto
                 img.setAttribute('src','adulto-m.png')
                
-            }else if (idade < 119){
+            }else{
                 //idoso
                 img.setAttribute('src','idoso-m.png')
             }
