@@ -1,13 +1,6 @@
-/*
-var c = 1 
-while (c <= 10 ){
-    console.log(c)
-    c++
+console.log('Inicializando o programa')
+var c = 1
+for(var c = 1; c <= 6; c++){
+    console.log(`Acabei de dar o ${c} passo`)
 }
-*/
-//-----------------------------------
-console.log('Vai começar')
-for(var c = 1; c <= 5; c++){
-    console.log(c)
-}
-console.log('FIM')
+console.log('Fim do programa')
