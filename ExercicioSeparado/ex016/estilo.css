@@ -1,5 +1,5 @@
 body{
-    background: rgb(56, 206, 56);
+    background: rgb(15, 15, 15);
     font: normal 14pt;
 }
 header{
@@ -20,5 +20,19 @@ footer{
     color: white;
     font-style: italic;
     text-align: center;
+
+}
+#inicio{
+    margin-top: 5px;
+    border-radius: 50px;
+}
+#fim{
+    margin-top: 10px;
+    border-radius: 50px;
+}
+#passo{
+    
+    margin-top: 10px;
+    border-radius: 50px;
 
 }
