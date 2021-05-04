@@ -11,7 +11,7 @@ section{
     background: white;
     border-radius: 10px;
     padding: 10px;
-    width: 1000px;
+    width: 500px;
     margin: auto;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.479);
 
@@ -22,17 +22,19 @@ footer{
     text-align: center;
 
 }
-#inicio{
-    margin-top: 5px;
-    border-radius: 50px;
-}
-#fim{
-    margin-top: 10px;
-    border-radius: 50px;
-}
-#passo{
-    
-    margin-top: 10px;
-    border-radius: 50px;
 
+#txti{
+    border-radius: 50px;
+}
+
+#txtf {
+    border-radius: 50px;
+}
+
+#txtp {
+    border-radius: 50px;
+}
+
+.res {
+    margin-top: 10px;
 }

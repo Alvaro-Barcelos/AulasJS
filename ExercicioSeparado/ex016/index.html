@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Super contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
    
     <header>
-        <h1>Contagem</h1>
+        <h1>Contador</h1>
     </header>
     
     <section>
-        <div class="dados_da_contagem">
-            Inicio: <input type="text" name="inicio" id="inicio"><br>
-            Fim: <input type="text" name= "fim" id="fim"> <br>
-            Passo: <input type="text" name="passo" id="passo"> <br>
-            <br>
-            <input type="button" value="Contar">
-        </div>
-        <div class="imprime_resultados">
-            <p>Contagem</p> 
         
+        <div class="dados">
+            <p>Inicio: <input type="number" name="Inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="Fim" id="txtf"></p>
+            <p>Passo <input type="number" name="Passo" id="txtp"></p>
+            <input type="button" value="Contar" onclick="contar()">
         </div>
+            
+        <div class="imprimir_dados">
+            
+        </div>
+
     </section>
     
     <footer>
